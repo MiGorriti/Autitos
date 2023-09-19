@@ -93,7 +93,7 @@ export default function Home() {
         </div>
 
         <div>
-          <h2 className={styles.SubTitle}>Todos los Vehiculos</h2>
+          <h2 className={styles.SubTitle}>Todos los Vehículos</h2>
         </div>
         <Cards currentPage={currentPage} />
       </div>

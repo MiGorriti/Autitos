@@ -1,2 +1,4 @@
 /api
 /deposito.js
+# Local Netlify folder
+.netlify

@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -29,30 +28,29 @@ const Navbar = () => {
   return (
     <nav className="nav">
       <div className="divLogo">IGNITE MOTORS</div>
-      <a href="#" className="nav__brand">
+      <Link to="/Home" className="nav__brand">
         {" "}
-      </a>
+      </Link>
       <ul className="nav__menu">
         <li className="nav__item">
-          <a href="/home" className="nav__link">
+          <Link to="/Home" className="nav__link">
             VEHICULOS
-          </a>
+          </Link>
         </li>
         <li className="nav__item">
-          <a href="/About" className="nav__link">
+          <Link to="/About" className="nav__link">
             NOSOTROS
-          </a>
+          </Link>
         </li>
         <li className="nav__item">
-
-          <a href="/Favorites" className="nav__link">
+          <Link to="/Favorites" className="nav__link">
             FAVORITOS
-          </a>
+          </Link>
         </li>
         <li className="nav__item">
-          <a href="/Form" className="nav__link">
+          <Link to="/Form" className="nav__link">
             VENDER VEHICULO
-          </a>
+          </Link>
         </li>
         <li className="nav__item">
           {fullName ? (
@@ -63,17 +61,16 @@ const Navbar = () => {
               </button>
             </>
           ) : (
-            <a href="/registro" className="nav__link">
+            <Link to="/registro" className="nav__link">
               REGISTRATE
-            </a>
+            </Link>
           )}
         </li>
         <li className="nav__item">
-          <a href="/Login" className="nav__link">
+          <Link to="/Login" className="nav__link">
             INICIAR SESION
-          </a>
+          </Link>
         </li>
-
       </ul>
     </nav>
   );
